@@ -26,7 +26,7 @@ async def watch(
 ):
     #Making the select Menu
     menu = Select(placeholder="You find yourself in a confusing place.",min_values=15,options=[option1 ,option2,option3,option4,option5,option6,option7,option8,option9,option10,option11])
-
+    print("yes")
     view = View()
     view.add_item(menu)
 
