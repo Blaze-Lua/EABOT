@@ -19,7 +19,7 @@ async def on_ready():
     Bot.togetherControl = await DiscordTogether("OTE0ODIzMzE3OTUxNzYyNDgz.YaSpmw.UM9lYoU_gbvWPTLyeW9JreS5bm0")
     print("Bot has logged in  Youtube Watch Together")
 
-@Bot.slash_command(guild_ids=[895920665411076097])
+@Bot.slash_command()
 async def watch(
         ctx,
 ):
