@@ -2,7 +2,7 @@ import discord
 from discord.ui import Select, View , Button
 from discord_together import DiscordTogether
 import os
-
+print("imported")
 #all Select stuff
 option1 = discord.SelectOption(label='Youtube', description="Watch youtube with your gang!")
 option2 = discord.SelectOption(label='Chess', description="Play chess with your gang!")
