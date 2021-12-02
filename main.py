@@ -1,6 +1,7 @@
 import discord
 from discord.ui import Select, View , Button
 from discord_together import DiscordTogether
+import os
 
 #all Select stuff
 option1 = discord.SelectOption(label='Youtube', description="Watch youtube with your gang!")
@@ -13,10 +14,11 @@ option7 = discord.SelectOption(label='Word-snack', description="Watch Word-snack
 
 
 Bot = discord.Bot()
+TOKEN = os.environ("DISCORD_TOKEN")
 
 @Bot.event
 async def on_ready():
-    Bot.togetherControl = await DiscordTogether("OTE0ODIzMzE3OTUxNzYyNDgz.YaSpmw.UM9lYoU_gbvWPTLyeW9JreS5bm0")
+    Bot.togetherControl = await DiscordTogether(TOKEN)
     print("Bot has logged in  Youtube Watch Together")
 
 @Bot.slash_command()
@@ -65,4 +67,4 @@ async def watch(
     return
 
 
-Bot.run("OTE0ODIzMzE3OTUxNzYyNDgz.YaSpmw.UM9lYoU_gbvWPTLyeW9JreS5bm0")
+Bot.run(TOKEN)
