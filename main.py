@@ -14,7 +14,7 @@ option7 = discord.SelectOption(label='Word-snack', description="Watch Word-snack
 
 
 Bot = discord.Bot()
-TOKEN = os.environ("DISCORD_TOKEN")
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 @Bot.event
 async def on_ready():
